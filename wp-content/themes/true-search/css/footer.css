@@ -1,0 +1,222 @@
+/* =========================================================
+    11.1 FOOTER
+   ========================================================= */
+
+.site-footer {
+  background-color: #000;
+  color: #96a2a1;
+  font-size: 20px;
+  letter-spacing: .25px;
+  line-height: 31px;
+}
+
+.footer-inner-wrap {
+  margin: 0 auto;
+  max-width: 1120px;
+  padding-top: 56px;
+  padding-bottom: 52px;
+  width: 90%;
+}
+@media screen and (min-width: 1232px) {
+  .footer-inner-wrap {
+    padding-top: 110px;
+    padding-bottom: 133px;
+    width: 1120px;
+  }
+}
+
+.footer-intro-container {
+  margin: 0 auto 71px;
+}
+@media screen and (min-width: 850px) {
+  .footer-intro-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1232px) {
+  .footer-intro-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 1120px;
+  }
+}
+
+.footer-intro-section {
+  margin-bottom: 36px;
+}
+@media screen and (min-width: 850px) {
+  .footer-intro-section {
+    margin-bottom: 9px;
+  }
+}
+@media screen and (min-width: 1232px) {
+  .footer-intro-section {
+    margin-bottom: 0;
+  }
+}
+
+
+.footer-intro-left {
+}
+@media screen and (min-width: 850px) {
+  .footer-intro-left {
+    width: 265px;
+  }
+}
+@media screen and (min-width: 1232px) {
+  .footer-intro-left {
+    width: 265px;
+  }
+}
+
+
+.footer-intro-middle {
+}
+@media screen and (min-width: 850px) {
+  .footer-intro-middle {
+    width: calc(100% - 285px);
+  }
+}
+@media screen and (min-width: 1232px) {
+  .footer-intro-middle {
+    width: 550px;
+  }
+}
+
+
+.footer-intro-middle p {
+  margin: 0;
+}
+
+.footer-intro-right {
+}
+@media screen and (min-width: 1232px) {
+  .footer-intro-right {
+    text-align: center;
+    width: 265px;
+  }
+}
+
+.footer-social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-social li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 23px 0 0;
+}
+.footer-social a {
+  font-size: 30px;
+}
+.footer-social a:focus, .footer-social a:hover, .footer-social a:active,
+.site-footer a:focus, .site-footer a:hover, .site-footer a:active {
+  color: #96a2a1;
+}
+.footer-social i {
+}
+
+.site-footer a {
+  text-decoration: none;
+}
+
+.footer-section-divider {
+  height: 37px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+.footer-divider-border {
+  background-color: #3a4241;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: -1;
+}
+.footer-divider-map-marker {
+  background-color: #000;
+  height: 37px;
+  margin: 0 auto;
+  text-align: center; 
+  width: 80px;
+}
+.footer-divider-map-marker .fa-map-marker {
+  color: #f90;
+  font-size: 37px;
+}
+
+.footer-location-container {
+}
+@media screen and (min-width: 560px) {
+  .footer-location-container {
+     display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+.the-location {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 40px 0 17px;
+}
+@media screen and (min-width: 560px) {
+  .the-location {
+    display: inline-block;
+    width: 241px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .the-location {
+    display: inline-block;
+    width: 270px;
+  }
+}
+@media screen and (min-width: 1232px) {
+  .the-location {
+    display: inline-block;
+    width: 241px;
+  }
+  .the-location:nth-of-type(4n+1) {
+    width: 208px;
+  }
+  .the-location:nth-of-type(4n+2) {
+    margin-right: 4px; 
+  }
+  .the-location:nth-of-type(4n+3) {
+    margin-left: 39px;
+    width: 264px;
+  }
+  .the-location:nth-of-type(4n+4) {
+    width: 203px;
+  }
+}
