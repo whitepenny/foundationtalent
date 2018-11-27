@@ -235,6 +235,83 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_5bfca41230fc5",
+            "label": "Search",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5bfca41a30fc6",
+            "label": "Post Types to Include",
+            "name": "search_include_post_types",
+            "type": "checkbox",
+            "instructions": "Include these post types.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "post": "post",
+                "page": "page",
+                "attachment": "attachment",
+                "revision": "revision",
+                "nav_menu_item": "nav_menu_item",
+                "custom_css": "custom_css",
+                "customize_changeset": "customize_changeset",
+                "oembed_cache": "oembed_cache",
+                "user_request": "user_request",
+                "placement": "placement",
+                "acf-field-group": "acf-field-group",
+                "acf-field": "acf-field",
+                "team-member": "team-member",
+                "sector": "sector",
+                "asset": "asset",
+                "function": "function",
+                "client": "client"
+            },
+            "allow_custom": 0,
+            "save_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value"
+        },
+        {
+            "key": "field_5bfca42f30fc7",
+            "label": "Categories to Exclude",
+            "name": "search_exclude_categories",
+            "type": "taxonomy",
+            "instructions": "Exclude posts in these categories.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "category",
+            "field_type": "checkbox",
+            "allow_null": 0,
+            "add_term": 0,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "multiple": 0
         }
     ],
     "location": [
@@ -254,5 +331,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1543277193
+    "modified": 1543283787
 }

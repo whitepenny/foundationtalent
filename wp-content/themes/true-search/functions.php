@@ -175,3 +175,32 @@ require get_template_directory() . '/inc/placements.php';
 if( function_exists('acf_add_options_page') ) {
 	acf_add_options_page();
 }
+
+
+
+// Search edits - BP 09/2018
+
+function custom_post_type_search( $query ) {
+  if (!is_admin() && $query->is_search) {
+    $post_types = get_field( 'search_include_post_types', 'option' );
+    $categories = get_field( 'search_exclude_categories', 'option' );
+
+    $query->set('post_type', $post_types);
+    $query->set('category__not_in', $categories);
+  }
+  return $query;
+}
+add_filter( 'pre_get_posts', 'custom_post_type_search' );
+
+function acf_load_post_types($field) {
+  $post_types = get_post_types();
+
+  $field['choices'] = array();
+
+  foreach ($post_types as $post_type) {
+    $field['choices'][ $post_type ] = $post_type;
+  }
+
+  return $field;
+}
+add_filter('acf/load_field/name=search_include_post_types', 'acf_load_post_types');
