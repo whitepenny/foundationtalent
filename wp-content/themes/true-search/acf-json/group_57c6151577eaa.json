@@ -1,0 +1,352 @@
+{
+    "key": "group_57c6151577eaa",
+    "title": "Home Options",
+    "fields": [
+        {
+            "key": "field_5a381d4229f73",
+            "label": "Home Headings",
+            "name": "home_headings",
+            "type": "repeater",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 4,
+            "max": 4,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5a381d5929f74",
+                    "label": "Heading",
+                    "name": "heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_57c76d26e0309",
+            "label": "Home Header Location Repeater",
+            "name": "home_header_location_repeater",
+            "type": "repeater",
+            "instructions": "Repeating field to input all the locations shown at the bottom of the Home page header.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Row",
+            "sub_fields": [
+                {
+                    "key": "field_57c76d80e030b",
+                    "label": "The Home Header Location",
+                    "name": "the_home_header_location",
+                    "type": "text",
+                    "instructions": "Enter all the locations, one by one.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_57c72728eb841",
+            "label": "Home Section Two Headline",
+            "name": "home_section_two_headline",
+            "type": "text",
+            "instructions": "Headline for Section Two of the Home page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_57c7273eeb842",
+            "label": "Home Section Two Text",
+            "name": "home_section_two_text",
+            "type": "textarea",
+            "instructions": "Text for Section Two of the Home page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_57c73384d9dde",
+            "label": "Home Section Two Bucket Repeater",
+            "name": "home_section_two_bucket_repeater",
+            "type": "repeater",
+            "instructions": "Repeating field for the three bucket section in Section Two of the Home page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add Row",
+            "sub_fields": [
+                {
+                    "key": "field_57c733b7d9ddf",
+                    "label": "Home Section Two Bucket Image",
+                    "name": "home_section_two_bucket_image",
+                    "type": "url",
+                    "instructions": "The URL or the image for this three-bucket block. Why are we using URLs? To allow for SVG use for retina screens, since uploading SVGs to the WordPress Media library is disabled by default for security purposes.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_57c73420d9de0",
+                    "label": "Home Section Two Bucket Headline",
+                    "name": "home_section_two_bucket_headline",
+                    "type": "text",
+                    "instructions": "A short headline for this three-bucket block.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_57c73453d9de1",
+                    "label": "Home Section Two Bucket Text",
+                    "name": "home_section_two_bucket_text",
+                    "type": "textarea",
+                    "instructions": "A sentence or two of text for this three-bucket block.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": ""
+                }
+            ]
+        },
+        {
+            "key": "field_57c7218dff26b",
+            "label": "Home Section Three Headline",
+            "name": "home_section_three_headline",
+            "type": "text",
+            "instructions": "Headline for section three of the Home page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_57c721a6ff26c",
+            "label": "Home Section Three Text",
+            "name": "home_section_three_text",
+            "type": "textarea",
+            "instructions": "Text for Section Three of the Home page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_57c64e59ca611",
+            "label": "Home Section Four Background Image",
+            "name": "home_section_four_background_image",
+            "type": "image",
+            "instructions": "Background image for the last section before the footer.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_57c64e9d04049",
+            "label": "Home Section Four Headline",
+            "name": "home_section_four_headline",
+            "type": "textarea",
+            "instructions": "The headline for the last section of the home page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_57c64ec90404a",
+            "label": "Home Section Four Text",
+            "name": "home_section_four_text",
+            "type": "textarea",
+            "instructions": "Paragraph text for Section Four of the Home page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_57c64eeb0404b",
+            "label": "Home Section Four Button Link",
+            "name": "home_section_four_button_link",
+            "type": "url",
+            "instructions": "URL for the call-to-action button in this final section of the home page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_57c64f170404c",
+            "label": "Home Section Four Button Text",
+            "name": "home_section_four_button_text",
+            "type": "text",
+            "instructions": "Button text for our call-to-action button at the bottom of the Home page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-home.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1543277209
+}

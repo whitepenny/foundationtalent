@@ -15,9 +15,9 @@ function disableOther( button ) {
 
 /* Home screen text efects
 --------------------------- */
- 
+
 (function() {
-    
+
     function showNextQuote() {
         jQuery('.quote1')
             .delay(500)
@@ -45,9 +45,9 @@ function disableOther( button ) {
             .fadeIn(800)
             .addClass('animated slideInUp');
     }
-  
+
     showNextQuote();
-    
+
 })();
 
 
@@ -67,7 +67,7 @@ jQuery(document).ready(function() {
 jQuery('.featured-team-member').hover(
   function () {
     jQuery(this).find('.grid-team-member-mask').addClass('displayed');
-  }, 
+  },
   function () {
     jQuery(this).find('.grid-team-member-mask').removeClass('displayed');
   }
@@ -76,7 +76,7 @@ jQuery('.featured-team-member').hover(
 jQuery('.grid-team-member').hover(
   function () {
     jQuery(this).find('.grid-team-member-mask').addClass('displayed');
-  }, 
+  },
   function () {
     jQuery(this).find('.grid-team-member-mask').removeClass('displayed');
   }
@@ -87,7 +87,7 @@ jQuery('.team-close').on( 'click', function( event ) {
   jQuery(this).parent('.grid-team-member-mask').removeClass('displayed');
 });
 // e.preventDefault();
-      
+
 
 /* Lazy load team images
 -----------------------------------------*/
@@ -122,7 +122,7 @@ jQuery(document).ready(function(){
 
 });
 
-/* SVG 
+/* SVG
 -----------------------------------------*/
 
 //var svgFixer = require('/wp-content/themes/true-search/js/webkit-svg-fixer.js');
@@ -132,3 +132,133 @@ jQuery(document).ready(function(){
 -----------------------------------------*/
 
 //webkitSvgFixer.fixall()
+
+
+
+/* BP Edits - Placement Filtering */
+
+(function($) {
+  var $items;
+  var $noResults;
+  var $container;
+  var $form;
+  var $filters;
+
+  var activeFilters = [];
+  var activeQuery = [];
+
+  $(document).ready(function() {
+    // init();
+
+    $container = $("#filterResults");
+    $form = $(".searchandfilter");
+    $filters = $(".searchandfilter").find("select");
+
+    if ($container.length) {
+      onInit();
+    }
+  });
+
+  // function init() {
+  //   $.ajax({
+  //     url: 'http://truesearch.test/wp-admin/admin-ajax.php',
+  //     type: 'GET',
+  //     data: {
+  //       'action': 'placements_get_posts',
+  //       'collection': 63
+  //     },
+  //     success: function(response) {
+  //       $container.html(response);
+  //
+  //       onInit();
+  //     }
+  //   });
+  // }
+
+  function onInit() {
+    $items = $(".placement-preview");
+    $noResults = $(".placement-no-results");
+
+    $container.equalize({
+      target: ".placement-preview"
+    });
+
+    parseQuery();
+  }
+
+  function parseQuery() {
+    var parts = window.location.hash.replace("#", "").split("&");
+    var query = {};
+
+    for (var i = 0; i < parts.length; i++) {
+      var s = parts[i].split("=");
+
+      $('select[name="' + s[0] + '"]').val(s[1]);
+    }
+
+    doFilter();
+
+    $form.on("change", "select", onFilterChange);
+    $form.on("click", ".search-filter-reset", onFilterReset);
+  }
+
+  function onFilterChange(e) {
+    doFilter();
+  }
+
+  function onFilterReset(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    $filters.val("");
+
+    doFilter();
+  }
+
+  function doFilter() {
+    var activeFilters = [];
+    var activeQuery = [];
+
+    $filters.each(function() {
+      var $this = $(this);
+      var key = $this.attr("name");
+      var val = $this.val();
+
+      if ( val !== "" ) {
+        activeFilters.push(val);
+        activeQuery.push( key + '=' + val );
+      }
+    });
+
+    $items.each(function() {
+      var $this = $(this);
+      var classes = $this.attr("class").split(" ");
+      var visible = true;
+
+      for (var i = 0; i < activeFilters.length; i++) {
+        var alt1 = activeFilters[i] + '-1';
+        var alt2 = activeFilters[i] + '-2';
+
+        if ($.inArray(activeFilters[i], classes) < 0 && $.inArray(alt1, classes) < 0 && $.inArray(alt2, classes) < 0) {
+          visible = false;
+        }
+      }
+
+      if (visible) {
+        $this.show();
+      } else {
+        $this.hide();
+      }
+    });
+
+    if ($items.filter(":visible").length == 0) {
+      $noResults.show();
+    } else {
+      $noResults.hide();
+    }
+
+    window.location.hash = activeQuery.length ? activeQuery.join("&") : "-";
+
+    $container.equalize("resize");
+  }
+})(jQuery);

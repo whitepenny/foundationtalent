@@ -1,0 +1,43 @@
+{
+    "key": "group_57ccb1fd59e27",
+    "title": "Single Client Options",
+    "fields": [
+        {
+            "key": "field_57ccb2060dc35",
+            "label": "Client Notes",
+            "name": "client_notes",
+            "type": "textarea",
+            "instructions": "Some quick notes about this client that appears in the sidebar.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "client"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1543277202
+}

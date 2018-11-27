@@ -105,18 +105,20 @@ add_action( 'widgets_init', 'true_search_widgets_init' );
  * Enqueue scripts and styles.
  */
 function true_search_scripts() {
-	wp_enqueue_style( 'true-search-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'true-search-style', get_stylesheet_uri(), array(), '20181126' );
 
 	wp_enqueue_style( 'true-search-header-style', get_template_directory_uri() . '/css/header.css', array(), '20160905' );
 
 	wp_enqueue_style( 'true-search-footer-style', get_template_directory_uri() . '/css/footer.css', array(), '20160905' );
+
+  wp_enqueue_style( 'true-search-add-styles', get_template_directory_uri() . '/styles/min/style.css', array(), '20181126' );
 
 	wp_enqueue_script( 'true-search-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'true-search-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'true-search-flexibility', get_template_directory_uri() . '/js/flexibility.js', array(), '20160821', true );
-	
+
 	wp_enqueue_script( 'true-search-classie', get_template_directory_uri() . '/js/classie.min.js', array(), '20160822', true );
 
 	wp_enqueue_script( 'true-search-smoothscroll', get_template_directory_uri() . '/js/smooth-scroll.min.js', array('jquery'), '20160822', true );
@@ -125,8 +127,10 @@ function true_search_scripts() {
 
 	wp_enqueue_script( 'true-search-jquery-lazy', get_template_directory_uri() . '/js/jquery.lazy.min.js', array('jquery'), '20161005', true );
 
+  // Moved from taxonomy.php
+  wp_enqueue_script( 'true-search-filters', get_template_directory_uri() . '/styles/dist/main.min.js', array('jquery'), '20181126', true );
 
-	wp_enqueue_script( 'true-search-custom', get_template_directory_uri() . '/js/custom.js', array('jquery'), '20160822', true );
+	wp_enqueue_script( 'true-search-custom', get_template_directory_uri() . '/js/custom.js', array('jquery'), '20181126', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -158,6 +162,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load Placements Functionality
+ */
+require get_template_directory() . '/inc/placements.php';
 
 /**
  * ACF Options Page

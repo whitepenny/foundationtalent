@@ -1,0 +1,64 @@
+{
+    "key": "group_57c2509186915",
+    "title": "Clients Overview Options",
+    "fields": [
+        {
+            "key": "field_57c282afa97ac",
+            "label": "Client Overview Image",
+            "name": "client_overview_image",
+            "type": "image",
+            "instructions": "Image for the Client Overview page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_57c282dba97ad",
+            "label": "Client Overview Logo",
+            "name": "client_overview_logo",
+            "type": "url",
+            "instructions": "If there is a white logo for this client in SVG format, you can enter the URL here. We are using URLs for SVGs, as these are not enabled in the WordPress Media library by default for security reasons.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "client"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1543277219
+}

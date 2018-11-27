@@ -1,0 +1,158 @@
+{
+    "key": "group_57bfdb9014e1e",
+    "title": "Single Team Member Options",
+    "fields": [
+        {
+            "key": "field_57bfdbe863b9d",
+            "label": "Team Member Title",
+            "name": "team_member_title",
+            "type": "text",
+            "instructions": "What is the title this person holds?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_57eea3b5cf5b8",
+            "label": "Last Name",
+            "name": "last_name",
+            "type": "text",
+            "instructions": "For sorting purposes on Team Overview page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_57bfe06a00aac",
+            "label": "Team Member City",
+            "name": "team_member_city",
+            "type": "text",
+            "instructions": "What city is this team member located in?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_57bfe08600aad",
+            "label": "Team Member Email Address",
+            "name": "team_member_email",
+            "type": "email",
+            "instructions": "Email address for this team member.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_57bfe0a100aae",
+            "label": "Team Member LinkedIn",
+            "name": "team_member_linkedin",
+            "type": "url",
+            "instructions": "LinkedIn URL for this team member.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_57bfe11b00aaf",
+            "label": "Quick Facts",
+            "name": "quick_facts",
+            "type": "textarea",
+            "instructions": "A list of interesting facts that sit under the \"Quickly\" headline in the right hand sidebar. Some quick facts that let you get to know this team member.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_57bfe54561296",
+            "label": "Black and White Photo",
+            "name": "bw_team_member_photo",
+            "type": "image",
+            "instructions": "Black and white photo for the team overview page (except Founders), and for the individual sector, assets, and functions pages (all team members).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "team-member"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1543277199
+}

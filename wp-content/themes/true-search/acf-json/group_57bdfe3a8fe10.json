@@ -1,0 +1,148 @@
+{
+    "key": "group_57bdfe3a8fe10",
+    "title": "Company Page Options",
+    "fields": [
+        {
+            "key": "field_57be06acea93b",
+            "label": "Company Page Section Two Image",
+            "name": "company_page_section_two_image",
+            "type": "image",
+            "instructions": "Background image for the left hand side of Section Two.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_57be0703ea93c",
+            "label": "Company Section Two Left Headline",
+            "name": "company_section_two_left_headline",
+            "type": "text",
+            "instructions": "Headline that appears over the top of the left-side image in Section Two.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_57be0738ea93d",
+            "label": "Company Section Two Right Text",
+            "name": "company_section_two_right_text",
+            "type": "textarea",
+            "instructions": "The text in the right hand side of Section Two.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_57be075fea93e",
+            "label": "Company Bottom Background Image",
+            "name": "company_bottom_background_image",
+            "type": "image",
+            "instructions": "Background image for the last section of the main part of this page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_57be07c0ea93f",
+            "label": "Company Bottom Left Headline",
+            "name": "company_bottom_left_headline",
+            "type": "text",
+            "instructions": "Headline for the left side text box in the bottom section.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_57be07dfea940",
+            "label": "Company Bottom Right Text",
+            "name": "company_bottom_right_text",
+            "type": "textarea",
+            "instructions": "Text that appears on the right hand side of the bottom section on this page.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "wpautop"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-company.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1543277218
+}
