@@ -94,6 +94,25 @@
             "placeholder": ""
         },
         {
+            "key": "field_5ba2f20ae039b",
+            "label": "Quick Facts Label",
+            "name": "quick_facts_label",
+            "type": "text",
+            "instructions": "Defaults to 'Snapshot'.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_57bfe11b00aaf",
             "label": "Quick Facts",
             "name": "quick_facts",
@@ -154,5 +173,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1543277199
+    "modified": 1543430126
 }

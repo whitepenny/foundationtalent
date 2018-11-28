@@ -4821,3 +4821,24 @@ body .searchandfilter ul li {
     width: 17%;
   }
 }
+
+
+
+/* BP - Adding investors to placements (11/2018) */
+
+.placement-preview__content ul li {
+  line-height: 21px;
+}
+
+.placement-investors_label {
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.15em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.placement-preview__content .placement-investors_list {
+  margin-top: 0;
+  margin-bottom: 10px;
+}

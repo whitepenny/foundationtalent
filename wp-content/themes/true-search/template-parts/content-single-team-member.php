@@ -8,26 +8,30 @@
 		if ( in_category('featured', $post->ID) ) { ?>
 		    <header class="entry-header" <?php if( $feat_image ) : ?>style="background-image: url(<?php echo $feat_image; ?>); <?php endif; ?>">
 		<?php
-		} 
+		}
 
 		else { ?>
 		    <header class="entry-header">
 		<?php
 			}
 		?>
-		
+
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<div class="single-team-entry-content-inner grid1170">
 			<div class="single-team-member-main">
 				<div class="single-team-member-main-inner">
-					<?php 
+					<?php
 						//variables
 						$teammembertitle = get_field('team_member_title');
 						$teammembercity = get_field('team_member_city');
 						$teammemberemail = get_field('team_member_email');
 						$teammemberlinkedin = get_field('team_member_linkedin');
+            $quickfacts_label = get_field('quick_facts_label');
+						if (empty($quickfacts_label)) {
+  						$quickfacts_label = 'Snapshot';
+						}
 						$quickfacts = get_field('quick_facts');
 						$teammemberquote = get_field('team_member_quote_2');
 						$quotecite = get_field('team_member_quote_attribution');
@@ -57,15 +61,15 @@
 
 						        		<p class="block noteworthy"><strong>Noteworthy Clients:</strong></p>
 						        		<div class="team-member-logos">
-						        	    <?php while( have_rows('team_member_logo_repeater') ): the_row(); 
+						        	    <?php while( have_rows('team_member_logo_repeater') ): the_row();
 
 							        	    // vars
-											$tmlogos = get_sub_field('team_member_logo'); 
+											$tmlogos = get_sub_field('team_member_logo');
 										?>
 						                <div class="teammember-logo">
 						                    <?php if( !empty($tmlogos) ):
 												$tmlogourl = $tmlogos['url'];
-							                    $tmlogoalt = $tmlogos['alt'];					                
+							                    $tmlogoalt = $tmlogos['alt'];
 									    	?>
 						                    	<img src="<?php echo $tmlogourl; ?>" alt="<?php echo $tmlogoalt; ?>" />
 						                    <?php endif; ?>
@@ -90,16 +94,16 @@
 					if ( in_category('featured', $post->ID) ) { ?>
 					    <div class="no-small-photo"></div>
 					<?php
-					} 
+					}
 
 					else { ?>
-					    
+
 					    <?php if( !empty($colorphoto) ):
 							$urlone = $colorphoto['url'];
 			                $altone = $colorphoto['alt'];
 			                $sizeone = 'full';
 			                $thumbone = $colorphoto['sizes'][ $sizeone ];
-			            
+
 				    	?>
 							<img src="<?php echo $urlone; ?>" alt="<?php echo $altone; ?>" class="small-color-photo" />
 						<?php endif; ?>
@@ -114,12 +118,12 @@
 						<span class="quote-cite"><?php echo $quotecite; ?></span>
 					<?php endif; ?>
 
-				<h2 class="headline-style-7">Snapshot</h2>
+				<h2 class="headline-style-7"><?php echo $quickfacts_label; ?></h2>
 				<?php if( $quickfacts ) : ?>
 					<div class="quick-facts"><?php echo $quickfacts; ?></div>
 				<?php endif; ?>
 			</div>
-		
+
 		</div>
 	</div><!-- .entry-content -->
 
