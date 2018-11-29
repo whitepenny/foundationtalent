@@ -164,13 +164,15 @@ function ts_placements_get_collection_category_count( $collection, $category ) {
 // Modify query to show all
 
 function ts_pre_get_posts( $query ) {
-  if ( $query->is_main_query() && ! is_admin() ) {
+  if ( $query->is_main_query() && ! is_admin() && is_tax( 'placement_collection' ) ) {
     $query->set( 'posts_per_page', -1 );
+    $query->set( 'orderby', 'menu_order' );
+    $query->set( 'order', 'ASC' );
   }
 
   return $query;
 }
-add_filter( 'pre_get_posts', 'ts_pre_get_posts' );
+add_filter( 'pre_get_posts', 'ts_pre_get_posts', 999 );
 
 // Ajax loading (if needed)
 
