@@ -111,7 +111,7 @@ function true_search_scripts() {
 
 	wp_enqueue_style( 'true-search-footer-style', get_template_directory_uri() . '/css/footer.css', array(), '20160905' );
 
-  wp_enqueue_style( 'true-search-add-styles', get_template_directory_uri() . '/styles/min/style.css', array(), '20181126' );
+  wp_enqueue_style( 'true-search-add-styles', get_template_directory_uri() . '/styles/min/style.css', array(), '20181130' );
 
 	wp_enqueue_script( 'true-search-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

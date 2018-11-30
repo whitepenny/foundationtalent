@@ -354,6 +354,7 @@ $mainColor: #ff1516;
 
 .placement-filter-toolbar {
     width: 100%;
+    max-width: 1220px;
     padding: 100px 20px 20px;
 
     @media (min-width: 800px) {
