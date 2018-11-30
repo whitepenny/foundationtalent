@@ -124,7 +124,7 @@
     }
 .search-overview-sidebar a {
         text-decoration: underline;
-        color: #ff1516;
+        color: #f90;
     }
 .search-overview-sidebar a:hover {
             color: #222;
@@ -147,10 +147,10 @@
             font-family: 'FontAwesome';
             content: '\f0da';
             margin-left: 5px;
-            color: #ff1516;
+            color: #f90;
         }
 .search-overview-sidebar .search-overview-section-list a:hover {
-            color: #ff1516;
+            color: #f90;
         }
 .search-overview-section-list {
     line-height: 30px;
@@ -286,7 +286,7 @@
         text-decoration: none;
     }
 .print-page-link a:hover, .print-page-link-lower a:hover {
-            color: #ff1516;
+            color: #f90;
         }
 @media screen and (min-width: 900px) {
 .print-page-link, .print-page-link-lower {
@@ -332,7 +332,7 @@
 
 }
 .btn-primary {
-    background: #ff1516;
+    background: #f90;
     text-transform: uppercase;
     font-size: 14px;
     color: #fff;
@@ -378,7 +378,9 @@
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            justify-content: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
         }
 .searchandfilter ul li {
                 margin: 0;
@@ -542,7 +544,7 @@
     font-weight: bold;
 }
 .page-numbers.current {
-        background: #ff1516;
+        background: #f90;
         color: #000;
     }
 span.page-numbers, a.page-numbers {
