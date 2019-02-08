@@ -174,6 +174,7 @@ function ts_pre_get_posts( $query ) {
   if ( $query->is_main_query() && ! is_admin() && is_tax( 'placement_collection' ) ) {
     $query->set( 'posts_per_page', -1 );
     // $query->set( 'orderby', 'menu_order' );
+    $query->set( 'orderby', 'name' );
     $query->set( 'order', 'ASC' );
   }
 
