@@ -572,3 +572,66 @@ span.page-numbers, a.page-numbers {
         display: inline-block;
     }
 }
+
+
+
+
+
+.salesforce_form {
+  margin: 40px auto;
+  max-width: 790px;
+}
+
+.salesforce_form p {
+  margin: 15px 0;
+  font-size: 0.813em;
+}
+
+.salesforce_form label {
+  font-size: 1;
+}
+
+.salesforce_form input,
+.salesforce_form textarea,
+.salesforce_form select {
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+.salesforce_form input[type="submit"] {
+  width: auto;
+  padding: 21px 92px;
+  font-weight: 700;
+  line-height: 2;
+  width: 100%;
+}
+
+@media screen and (min-width: 400px) {
+  .salesforce_form input[type="submit"] {
+    padding: 21px 139px;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .salesforce_form input[type="submit"] {
+    line-height: 1;
+    width: auto;
+    padding: 21px 139px;
+  }
+}
+
+.salesforce_form input[type="checkbox"] {
+  float: left;
+  clear: none;
+  width: auto;
+  margin: 9px 10px 10px 0;
+}
+
+.salesforce_form textarea {
+  padding: 26px 13px 12px 26px;
+}
+
+.salesforce_form  input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) {
+  padding: 12px 13px 12px 26px;
+}
