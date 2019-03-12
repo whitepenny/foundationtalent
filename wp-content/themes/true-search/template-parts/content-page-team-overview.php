@@ -21,6 +21,7 @@
             'post_type' => 'team-member',
             'posts_per_page' => -1,
             'orderby' => 'menu_order',
+            'order' => 'ASC',
         );
         $custom_query = new WP_Query( $query_args ); ?>
 
