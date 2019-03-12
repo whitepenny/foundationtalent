@@ -19,7 +19,8 @@
 
         <?php $query_args = array(
             'post_type' => 'team-member',
-            'posts_per_page' => -1
+            'posts_per_page' => -1,
+            'orderby' => 'menu_order',
         );
         $custom_query = new WP_Query( $query_args ); ?>
 
